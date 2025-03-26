@@ -1,4 +1,4 @@
-# Next.js & Node.js Dashboard with Google Sheets Integration
+# Dashboard with Google Sheets Integration
 
 This project is a full-stack web application featuring a user dashboard built with Next.js (frontend) and Node.js/Express (backend). It includes JWT-based authentication, dynamic table creation based on Google Sheets data, real-time data updates (via WebSocket polling), and the ability to add custom columns directly in the dashboard UI.
 
