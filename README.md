@@ -64,10 +64,12 @@ cd <your-repository-name>
       ```bash
       cd backend
       ```
+
    *   **Install dependencies:**
       ```bash
       npm install or yarn install
       ```
+
    *   **Create Environment File:**
       Create a `.env` file in the `/backend` directory. Copy the contents of `.env.example` (if provided) or add the following variables, replacing placeholder values:
 
