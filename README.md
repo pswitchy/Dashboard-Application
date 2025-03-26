@@ -61,13 +61,12 @@ cd <your-repository-name>
 **2. Backend Setup:**
 
    *   **Navigate to the backend directory:**
-      ```
+      ```bash
       cd backend
       ```
    *   **Install dependencies:**
-      ```
-      npm install
-      # or yarn install
+      ```bash
+      npm install or yarn install
       ```
    *   **Create Environment File:**
       Create a `.env` file in the `/backend` directory. Copy the contents of `.env.example` (if provided) or add the following variables, replacing placeholder values:
