@@ -61,11 +61,11 @@ cd <your-repository-name>
 **2. Backend Setup:**
 
    *   **Navigate to the backend directory:**
-      ```bash
+      ```
       cd backend
       ```
    *   **Install dependencies:**
-      ```bash
+      ```
       npm install
       # or yarn install
       ```
