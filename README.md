@@ -97,12 +97,10 @@ cd <your-repository-name>
    *   **Navigate to the frontend directory:**
       ```bash
       cd ../frontend
-      # or from the root: cd frontend
       ```
    *   **Install dependencies:**
       ```bash
-      npm install
-      # or yarn install
+      npm install or yarn install
       ```
    *   **Create Environment File:**
       Create a `.env.local` file in the `/frontend` directory with the following variables:
