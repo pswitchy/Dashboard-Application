@@ -68,7 +68,7 @@ exports.login = async (req, res) => {
     res.cookie('authToken', token, {
       httpOnly: true, // Crucial: Prevents client-side JS access
       secure: process.env.NODE_ENV === 'production', // Use secure cookies in production (HTTPS only)
-      sameSite: 'strict', // Good practice for CSRF protection
+      sameSite: 'None', // Good practice for CSRF protection
       maxAge: 1 * 60 * 60 * 1000, // 1 hour in milliseconds (match JWT expiry)
       path: '/', // Make cookie available across the entire site
     });
@@ -98,7 +98,7 @@ exports.logout = (req, res) => {
     httpOnly: true,
     expires: new Date(Date.now() + 5 * 1000), // Expire very quickly
     secure: process.env.NODE_ENV === 'production',
-    sameSite: 'strict',
+    sameSite: 'None',
     path: '/',
   });
   res.status(200).json({ status: 'success', message: 'Logged out successfully' });
