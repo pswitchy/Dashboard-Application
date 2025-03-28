@@ -58,7 +58,7 @@ const server = http.createServer(app);
 
 // --- WebSocket Server Setup ---
 // Initialize *after* routes might have been required, but before server starts listening fully
-const wss = new WebSocket.Server({ server }); // Or attach to server: { server }
+const wss = new WebSocket.Server({ port: WEBSOCKET_PORT }); // Or attach to server: { server }
 
 wss.on('connection', (ws) => {
   console.log('Client connected via WebSocket');

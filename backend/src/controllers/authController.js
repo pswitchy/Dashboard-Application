@@ -46,8 +46,6 @@ exports.signup = async (req, res) => {
   }
 };
 
-// backend/src/controllers/authController.js
-
 exports.login = async (req, res) => {
   try {
     const { username, password } = req.body;
