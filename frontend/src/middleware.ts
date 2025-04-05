@@ -28,10 +28,10 @@ export async function middleware(request: NextRequest) {
 
   // If not in cookie, try Authorization header (less common for middleware, but possible)
   // Note: Headers might not be easily accessible or reliable in middleware depending on context
-  // const authHeader = request.headers.get('authorization');
-  // if (!token && authHeader?.startsWith('Bearer ')) {
-  //   token = authHeader.split(' ')[1];
-  // }
+  const authHeader = request.headers.get('authorization');
+  if (!token && authHeader?.startsWith('Bearer ')) {
+    token = authHeader.split(' ')[1];
+  }
 
   // HACKY WORKAROUND (Not Recommended for Production): Check localStorage via a client-side redirect/check.
   // Middleware runs server-side/edge, cannot access localStorage.
