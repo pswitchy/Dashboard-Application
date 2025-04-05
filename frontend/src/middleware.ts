@@ -13,10 +13,10 @@ async function verifyToken(token: string): Promise<boolean> {
   try {
     const secret = new TextEncoder().encode(JWT_SECRET);
     await jwtVerify(token, secret);
-    // console.log("Middleware: Token verified successfully");
+    console.log("Middleware: Token verified successfully");
     return true;
   } catch (error) {
-    // console.error('Middleware: Token verification failed:', error);
+    console.error('Middleware: Token verification failed:', error);
     return false;
   }
 }
